@@ -1,0 +1,154 @@
+html {
+    position: relative;
+    height:100%;
+    margin: auto;
+}
+body {
+    height:100%;
+    margin: 0;
+}
+.Wrapper {
+    width: 80%;
+    height: 150%;
+    margin: auto;
+
+}
+.MainContainer {
+    display: grid;
+    height: 100%;
+    /*  grid-template-columns: repeat(7, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 100px auto 100px;
+    grid-gap: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    border: 5px solid black;
+}
+.Header-container {
+    grid-column: 1 / 8;
+    grid-row: 1 / 4;
+    margin: 0;
+  /*  grid-template-columns: repeat(7, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 100px auto 100px;
+    display: grid;
+}
+.Header {
+    grid-column: 1 / 8;
+    grid-row: 1 / 2;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid black;
+}
+.Login {
+    grid-column: 7 / 8;
+    grid-row: 1 / 2;
+    background-color: gray;
+    text-align: right;
+    border-bottom: 5px solid black;
+}
+.vertical-menu {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: gray;
+    border-right: 5px solid black;
+}
+.Content {
+    grid-column: 2 / 8;
+    grid-row: 2 / 3;
+    background-color: gray;
+}
+.PaginationFooter {
+    position: relative;
+    bottom: auto;
+    color: gold;
+    text-decoration: none;
+}
+.Footer {
+    grid-column: 1 / 8;
+    grid-row: 3 / 4;
+    background-color: gray;
+    border-top: 5px solid black;
+    text-align: center;
+
+}
+a:link{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+a:link:hover {
+    color: #491217;
+}
+.vertical-menu a {
+    display: block;
+    background-color: darkgray;
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+}
+.vertical-menu p {
+    display: block;
+    background-color: darkgray;
+    color: black;
+    margin: 0px;
+
+}
+.vertical-menu a:hover {
+    background-color: chocolate;
+    color: black;
+}
+.vertical-menu a.active {
+    background-color: brown;
+    color: black;
+    text-decoration: none;
+}
+tr > td {
+    width: 50px;
+
+}
+table {
+    width: 500px;
+}
+
+tr {
+    height: 40px;
+}
+h1 {
+    color: orange;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content a {
+    color: orange;
+    text-align: center;
+    text-decoration: none;
+}
+.content * {
+    text-align: center;
+    text-decoration: none;
+}
+.content a:hover {
+    color: darkred;
+}
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: goldenrod;
+    color: white;
+}
+tr {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: cadetblue;
+    color: white;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
